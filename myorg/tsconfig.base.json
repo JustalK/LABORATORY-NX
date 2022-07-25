@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@myorg/auth": ["libs/auth/src/index.ts"],
       "@myorg/data": ["libs/data/src/index.ts"]
     }
   },
