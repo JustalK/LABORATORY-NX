@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "auth": "libs/auth",
+    "client": "apps/client",
+    "data": "libs/data",
+    "microservice1": "apps/microservice1",
+    "microservice2": "apps/microservice2"
+  }
+}
