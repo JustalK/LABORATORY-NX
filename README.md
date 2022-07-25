@@ -1,25 +1,34 @@
 # LABORATORY-NX
 
+![Alt text](Documentation/Graph.png?raw=true "Graph NX")
 
-## Create a new application Nest
+This project has been created using the libraries NX for creating a monorepository of microservices. Each microservices has been built with the CLI of NX as a Nest.js microservice. They communicate with the client using the TCP protocol and the message pattern of Nest.js.
+
+## Plan
+
+## Development
+
+## NX
+
+### Create a new application Nest
 
 ```bash
 $ nx generate @nrwl/nest:application <Name of app/microservice>
 ```
 
-## Create a new service inside the app todos
+### Create a new service inside the app todos
 
 ```bash
 $ nx generate @nrwl/nest:service <Name of service> --project <Name of Project> --directory app
 ```
 
-## Check the dependency graph
+### Check the dependency graph
 
 ```bash
 $ nx dep-graph
 ```
 
-## Run an application
+### Run an application
 
 ```bash
 $ nx serve <name of the app>
@@ -27,7 +36,7 @@ $ nx serve <name of the app>
 $ nx serve client
 ```
 
-## Run the app + microservices associated
+### Run the app + microservices associated
 
 ```bash
 $ nx run-many --parallel --target=serve --projects=client,microservice1,microservice2
