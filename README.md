@@ -1,8 +1,8 @@
-# LABORATORY-NX
+# LABORATORY-NX-TCP
 
 ![Alt text](Documentation/Graph.png?raw=true "Graph NX")
 
-This project has been created using the libraries NX for creating a monorepository of microservices. Each microservices has been built with the CLI of NX as a Nest.js microservice. They communicate with the client using the TCP protocol and the message pattern of Nest.js.
+This project has been created using the libraries **NX** for creating a monorepository of microservices. Each microservices has been built with the CLI of NX as a **Nest.js** microservice. They communicate with the client using the **TCP protocol** and the message pattern of Nest.js.
 
 ## Plan of the presentation
 
@@ -20,6 +20,10 @@ There are 3 apps:
 - **microservice2:** A nest.js microservice on port 3002
 
 When the api call one of the endpoint of the api, the service of the `client` is called. Inside the method, a message is sent to the microservices through the transporter TCP. Once the message is received, a response is sent back to the client as a response for the endpoint.
+
+The communication is using the decentralized TCP transporter. A simple image for illustrating what is a decentralized communication:
+
+![Alt text](Documentation/Decentralized.svg?raw=true "Decentralized TCP")
 
 ### Client
 
