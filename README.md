@@ -1,6 +1,13 @@
 # LABORATORY-NX-TCP
 
+```
+Note:
+This project has to be compared to the LABORATORY-NX-NATS
+https://github.com/JustalK/LABORATORY-NX-NATS
+```
+
 ![Alt text](Documentation/Graph.png?raw=true "Graph NX")
+
 
 This project has been created using the libraries **NX** for creating a monorepository of microservices. Each microservices has been built with the CLI of NX as a **Nest.js** microservice. They communicate with the client using the **TCP protocol** and the message pattern of Nest.js.
 
