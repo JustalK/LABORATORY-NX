@@ -73,7 +73,21 @@ return this.client1.send({cmd: 'greeting'}, 'Micro1')
 
 ### Microservices
 
-In the microservice, we use the decorator `MessagePattern` to indicate that a controller is waiting for a message from the client
+Register, the app has a Nest.js microservice:
+
+```js
+const app = await NestFactory.createMicroservice<MicroserviceOptions>(
+  AppModule,
+  {
+    transport: Transport.TCP,
+    options: {
+      port: 3001
+    }
+  },
+);
+```
+
+In the `app.controler.ts`, we use the decorator `MessagePattern` to indicate that a controller is waiting for a message from the client
 
 ```js
 @MessagePattern({cmd: 'greeting'})
